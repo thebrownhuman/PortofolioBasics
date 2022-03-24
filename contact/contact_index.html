@@ -31,7 +31,7 @@
       </nav>
     </header>
     <section class="form-section">
-      <form>
+      <form onsubmit="sendEmail(); reset(); return false;">
         <label for="name">Name</label>
         <input type="text" name="name" placeholder="Name" id="name" required />
         <label for="email">Email</label>
@@ -81,5 +81,28 @@
         </li>
       </ul>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "ahhateddy@gmail.com",
+          Password: "ahhateddy@123",
+          To: "shivanshmishra.official@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New contact form inquary",
+
+          Body:
+            "Name : " +
+            document.getElementById("name").value +
+            "<br> Email : " +
+            document.getElementById("email").value +
+            "<br> Phone no : " +
+            document.getElementById("phone").value +
+            "<br> Message : " +
+            document.getElementById("message").value,
+        }).then((message) => alert("Message sent succcessfully"));
+      }
+    </script>
   </body>
 </html>
