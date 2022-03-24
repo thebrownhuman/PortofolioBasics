@@ -350,57 +350,33 @@ nav ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border-radius: 5rem;
-  background-color: #c7f2ff;
+  border-radius: 2rem;
 }
 
 .form-section form input,
 .form-section form textarea {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  margin: 10px 20px;
-  padding: 5px 20px;
-  border-radius: 1rem;
-  background-color: #dbf8ff;
+  margin: 2rem;
 }
 
-.form-section form input:focus{
-    font-family: "Montserrat", sans-serif;
-  outline: 2px solid #3a3b3a;
-  margin: 10px 20px;
-  padding: 5px 20px;
-  background-color: #d6e2ff;
-}
+.form-section form input:focus,
 .form-section form textarea:focus {
-    font-family: "Montserrat", sans-serif;
-  outline: 2px solid #3a3b3a;
-  margin: 10px 20px;
-  padding: 10px 20px;
-  background-color: #d6e2ff;
+  outline: 2px solid black;
 }
 
 .form-section form textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  margin: 10px 20px;
-  padding: 10px 20px;
-  background-color: #dbf8ff;
 }
 
 .form-section form button {
-  width: 70%;
+  width: 100%;
   padding: 2rem;
   background: #154353;
-  border-radius: 5rem;
   color: white;
 }
 
 .form-section form button:focus {
   background: #33696b;
-  width: 70%;
-  padding: 2rem;
-  border-radius: 5rem; 
-  border color: #dbf8ff;
 }
 
 footer {
